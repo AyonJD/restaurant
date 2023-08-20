@@ -1242,17 +1242,17 @@ section {
   font-size: 14px;
   background: #0c0b09;
   border-color: #625b4b;
-  color: white;
+  color: #0c0b09;
 }
 
 .book-a-table .php-email-form input::-moz-placeholder,
 .book-a-table .php-email-form textarea::-moz-placeholder {
-  color: #a49b89;
+  color: #363636;
 }
 
 .book-a-table .php-email-form input::placeholder,
 .book-a-table .php-email-form textarea::placeholder {
-  color: #a49b89;
+  color: #363636;
 }
 
 .book-a-table .php-email-form input:focus,
@@ -1370,6 +1370,9 @@ section {
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
+.gallery{
+  background-color: #EEEEEE;
+}
 .gallery .gallery-item {
   overflow: hidden;
   border-right: 3px solid #454035;
@@ -1481,6 +1484,9 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact{
+  background: #EEEEEE;
+}
 .contact .info {
   width: 100%;
 }
@@ -1496,6 +1502,7 @@ section {
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
+  color: #fff;
 }
 
 .contact .info h4 {
@@ -1510,7 +1517,7 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #bab3a6;
+  color: #3a3a3a;
 }
 
 .contact .info .open-hours,
@@ -1578,17 +1585,17 @@ section {
   font-size: 14px;
   background: #0c0b09;
   border-color: #625b4b;
-  color: white;
+  color: #0c0b09;
 }
 
 .contact .php-email-form input::-moz-placeholder,
 .contact .php-email-form textarea::-moz-placeholder {
-  color: #a49b89;
+  color: #363636;
 }
 
 .contact .php-email-form input::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: #a49b89;
+  color: #363636;
 }
 
 .contact .php-email-form input:focus,
@@ -1625,6 +1632,12 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+/* Global */
+input, textarea {
+  background-color: #fff !important;
 }
 
 /*--------------------------------------------------------------
@@ -1735,7 +1748,7 @@ section {
 
 #footer .footer-top .footer-newsletter form {
   margin-top: 30px;
-  background: #28251f;
+  background: #28251f !important;
   padding: 6px 10px;
   position: relative;
   border-radius: 50px;
@@ -1746,8 +1759,13 @@ section {
   border: 0;
   padding: 4px;
   width: calc(100% - 110px);
-  background: #28251f;
+  background: #28251f !important;
   color: white;
+}
+
+#footer .footer-top .footer-newsletter form input[type=email]:focus{
+  border: 0;
+  outline: none;
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit] {
@@ -1759,14 +1777,14 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px 2px 20px;
-  background: #ce1212;
+  background: #ce1212 !important;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #910d0d;
+  background: #910d0d !important;
 }
 
 #footer .copyright {
@@ -1779,9 +1797,4 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
-}
-
-/* Global */
-input, textarea {
-  background-color: #fff !important;
 }
